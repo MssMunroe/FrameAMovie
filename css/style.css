@@ -1,86 +1,103 @@
-/* BASE */
+/* GENERAL */
+
 body {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #0c1a30;
-  color: white;
+  background-color: #0c0f18;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Layout principal */
 /* CABECERA */
 header {
-  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #0c0f18;
   color: #FFD700;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px 20px;
-  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* MENÚ IZQUIERDO */
+/* Si no pongo un margen del tamaño de la cabecera, seme come el main */
+main {
+  margin-top: 9vh;
+  /* pongo uno más del header para que respire un poco más */
+  flex: 1;
+  padding: 20px;
+}
+
+/* Icon Area Personal */
+.personal img {
+  width: 24px;
+  height: 24px;
+}
+
+/* MENU */
 .menu ul {
   list-style: none;
   display: flex;
   gap: 15px;
-  padding: 0;
-  margin: 0;
 }
 
 .menu ul li a {
   text-decoration: none;
   color: #FFD700;
-  font-size: 14px;
-  transition: color 0.3s ease;
+  font-size: 16px;
 }
 
-.menu ul li a:hover,
-.menu ul li a#activo {
+div ul li a:hover,
+div ul li a#activo {
   color: white;
   font-weight: bold;
 }
 
+
 /* TÍTULO */
-.titulo {
+.titulogeneral {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-evenly;
   font-size: 20px;
-  font-weight: bold;
+}
+
+.titulogeneral img {
+  width: 150px;
+  padding: 20px;
+}
+
+.titulogeneral a{
+  text-decoration: none;
   color: #FFD700;
 }
 
-/* PERSONAL */
-.personalybuscar {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+/* BÚSQUEDA */
 
-.personalybuscar img {
-  width: 24px;
-  height: 24px;
-}
-
-/* BUSCADOR */
-.personalybuscar form {
+.buscar form {
   background-color: #FFD700;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  padding: 2px 10px;
+  border-radius: 25px;
+  padding: 5px 35px;
 }
 
-.personalybuscar input[type="search"] {
+.buscar input[type="search"] {
   border: none;
-  padding: 5px 10px;
   outline: none;
   background: transparent;
   color: #000;
 }
 
+
 /* PIE DE PÁGINA */
 footer {
+  height: 20vh;
   background-color: #000;
   color: #FFD700;
   display: flex;
@@ -119,6 +136,19 @@ footer>a img {
 
 footer>a img:hover {
   transform: translateY(-5px);
+}
+
+.menupie ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menupie ul li a {
+  text-decoration: none;
+  color: #FFD700;
+  font-size: 16px;
 }
 
 /* NOVEDADES */
@@ -208,7 +238,6 @@ footer>a img:hover {
 
 .colecciones a {
   text-decoration: none;
-
 }
 
 .coleccion {
@@ -218,7 +247,7 @@ footer>a img:hover {
   border-radius: 8px;
 }
 
-.titulo {
+.coleccion .titulo {
   color: #FFD700;
   font-size: 20px;
   margin-bottom: 10px;

@@ -10,35 +10,40 @@
 </head>
 
 <body>
+    <!-- Como la cabecera es fija, pongo el enlace de Top fuera de ella, para que suba al inicio la flecha del footer  -->
+    <a id="top"></a>
     <header>
-<!-- Las letras del li no se ven igual en firefox, se ven más pequeñas  -->
-        <!--Menu izq-->
+
+        <!-- Menú izquierdo -->
         <div class="menu">
             <ul>
-                <li> <a id="activo" href="./inicio.html" target="_self">Inicio</a> </li>
-                <li> <a href="./colecciones.html" target="_self">Colecciones</a> </li>
-                <li> <a href="./foro.html" target="_self">Foro</a> </li>
-                <li> <a href="./peliculas.html" target="_self">Peliculas</a> </li>
-                <li> <a href="./series.html" target="_self">Series</a> </li>
-                <li> <a href="./estrenos.html" target="_self">Estrenos</a> </li>
+                <!-- Icon para el area personal -->
+                <li class="personal"><a href="./areapersonal.html" target="_self">
+                    <img src="./media/AreaPersonal.png" alt="Inicio Sesión">
+                </a></li>
+                <li><a id="activo" href="./inicio.html" target="_self">Inicio</a></li>
+                <li><a href="./colecciones.html" target="_self">Colecciones</a></li>
+                <li><a href="./foro.html" target="_self">Foro</a></li>
+                <li><a href="./peliculas.html" target="_self">Películas</a></li>
+                <li><a href="./series.html" target="_self">Series</a></li>
+                <li><a href="./estrenos.html" target="_self">Estrenos</a></li>
             </ul>
         </div>
 
-        <!-- Titulo -->
-        <div id="top" class="titulo">
-            <img src="./media/Cinta.png" alt="Cinta" height="20">
-            <h1>Frame a Movie</h1>
+        <!-- Título centrado con cintas -->
+        <div class="titulogeneral">
+            <img src="./media/Cinta.png" alt="Cinta" class="cinta">
+            <a href="https://github.com/MssMunroe/FrameAMovie"><h1>Frame a Movie</h1></a>
+            <img src="./media/Cinta.png" alt="Cinta" class="cinta">
         </div>
 
         <!-- Lateral derecho -->
-        <div class="personalybuscar">
-            <a href="./areapersonal.html" target="_self"><img src="./media/AreaPersonal.png" alt="Inicio Sesion"></a>
-            <form action="">
-                <label for="busqueda">Buscar</label>
-                <input type="search" name="busqueda">
+        <div class="buscar">
+            <!-- Si funcionase, el buscador iría a información sobre la película que quieres -->
+            <form action="./peliculas.html">
+                <input type="search" name="busqueda" placeholder="Buscar...">
             </form>
         </div>
-
     </header>
     <main>
         <article>
@@ -49,7 +54,8 @@
                         como lo conocemos
                     </span>
                     <span class="img">
-                        <a href="https://www.youtube.com/watch?v=Zk8gDi2ef9Y"><img src="./media/ultimanovedad.png" alt="Ultimas noticias"></a>
+                        <a href="https://www.youtube.com/watch?v=Zk8gDi2ef9Y"><img src="./media/ultimanovedad.png"
+                                alt="Ultimas noticias"></a>
                     </span>
                     <span class="contenido">
                         El estreno en cines de 'Misión: Imposible - Sentencia final' (Christopher McQuarrie, 2025)
@@ -67,7 +73,8 @@
                         Una descarada fiesta de exvillanos a la que no han invitado a los Vengadores
                     </span>
                     <span class="img">
-                        <a href="./estrenos.html#thunderbolts"><img src="./media/ultimanovedad2.png" alt="Ultimas noticias"></a>
+                        <a href="./estrenos.html#thunderbolts"><img src="./media/ultimanovedad2.png"
+                                alt="Ultimas noticias"></a>
                         <!-- Aprovechando la referencia que creado para la portada al trailer podría poner un enlace desde algúnas de las noticias si tuviera el trailer en mi página
                          o mandarles a youtube (como en la de arriba), así si las noticias le llaman la antención poder ver el trailer  -->
                     </span>
@@ -158,6 +165,18 @@
 
     </main>
     <footer>
+
+        <div class="menupie">
+            <ul>
+                <li><a href="./inicio.html" target="_self">Inicio</a></li>
+                <li><a href="./colecciones.html" target="_self">Colecciones</a></li>
+                <li><a href="./foro.html" target="_self">Foro</a></li>
+                <li><a href="./peliculas.html" target="_self">Películas</a></li>
+                <li><a href="./series.html" target="_self">Series</a></li>
+                <li><a href="./estrenos.html" target="_self">Estrenos</a></li>
+            </ul>
+        </div>
+
         <!-- Enlaces de interes -->
 
         <div class="enlace">
