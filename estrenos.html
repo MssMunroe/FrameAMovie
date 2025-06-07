@@ -10,36 +10,43 @@
 </head>
 
 <body>
+    <a id="top"></a>
     <header>
 
-        <!--Menu izq-->
+        <!-- Menú izquierdo -->
         <div class="menu">
             <ul>
-                <li> <a href="./inicio.html" target="_self">Inicio</a> </li>
-                <li> <a href="./colecciones.html" target="_self">Colecciones</a> </li>
-                <li> <a href="./foro.html" target="_self">Foro</a> </li>
-                <li> <a href="./peliculas.html" target="_self">Peliculas</a> </li>
-                <li> <a href="./series.html" target="_self">Series</a> </li>
-                <li> <a id="activo" href="./estrenos.html" target="_self">Estrenos</a> </li>
+                <!-- Icon para el area personal -->
+                <li class="personal"><a href="./areapersonal.html" target="_self">
+                        <img src="./media/AreaPersonal.png" alt="Inicio Sesión">
+                    </a></li>
+                <li><a href="./inicio.html" target="_self">Inicio</a></li>
+                <li><a href="./colecciones.html" target="_self">Colecciones</a></li>
+                <li><a href="./foro.html" target="_self">Foro</a></li>
+                <li><a href="./peliculas.html" target="_self">Películas</a></li>
+                <li><a href="./series.html" target="_self">Series</a></li>
+                <li><a id="activo" href="./estrenos.html" target="_self">Estrenos</a></li>
             </ul>
         </div>
 
-        <!-- Titulo -->
-        <div id="top" class="titulo">
-            <img src="./media/Cinta.png" alt="Cinta" height="20">
-            <h1>Frame a Movie</h1>
+        <!-- Título centrado con cintas -->
+        <div class="titulogeneral">
+            <img src="./media/Cinta.png" alt="Cinta" class="cinta">
+            <a href="https://github.com/MssMunroe/FrameAMovie">
+                <h1>Frame a Movie</h1>
+            </a>
+            <img src="./media/Cinta.png" alt="Cinta" class="cinta">
         </div>
 
         <!-- Lateral derecho -->
-        <div class="personalybuscar">
-            <a href="./areapersonal.html" target="_self"><img src="./media/AreaPersonal.png" alt="Inicio Sesion"></a>
-            <form action="">
-                <label for="busqueda">Buscar</label>
-                <input type="search" name="busqueda">
+        <div class="buscar">
+            <!-- Si funcionase, el buscador iría a información sobre la película que quieres -->
+            <form action="./peliculas.html">
+                <input type="search" name="busqueda" placeholder="Buscar...">
             </form>
         </div>
-
     </header>
+    
     <main>
         <article class="estrenos">
             <section id="jurassic" class="estreno">
@@ -65,13 +72,19 @@
             <section id="materialists" class="estreno">
                 <div class="sinopsis"> Materialists, el 13 de junio en cines.</div>
                 <div class="trailer">
-                    <iframe src="https://www.youtube.com/embed/4A_kmjtsJ7c" title="Materialists | Official Trailer HD | A24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/4A_kmjtsJ7c"
+                        title="Materialists | Official Trailer HD | A24" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
             <section id="thunderbolts" class="estreno">
                 <div class="sinopsis"> Thunderbolts* de Marvel Studios, el 30 de abril solo en cines.</div>
                 <div class="trailer">
-                    <iframe src="https://www.youtube.com/embed/w7ovxH7MGes" title="Thunderbolts* de Marvel Studios | Nuevo Tráiler Oficial  | HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/w7ovxH7MGes"
+                        title="Thunderbolts* de Marvel Studios | Nuevo Tráiler Oficial  | HD" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
             <section id="superman" class="estreno">
@@ -86,7 +99,10 @@
             <section id="destino" class="estreno">
                 <div class="sinopsis"> Destino Final: Lazos De Sangre, el 16 de mayo solo en cines.</div>
                 <div class="trailer">
-                    <iframe src="https://www.youtube.com/embed/jO0pT3Q4Rms" title="Destino Final Lazos de Sangre | Tráiler Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/jO0pT3Q4Rms"
+                        title="Destino Final Lazos de Sangre | Tráiler Oficial" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
         </article>
