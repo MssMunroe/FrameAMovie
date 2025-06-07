@@ -18,8 +18,8 @@
             <ul>
                 <!-- Icon para el area personal -->
                 <li class="personal"><a href="./areapersonal.html" target="_self">
-                    <img src="./media/AreaPersonal.png" alt="Inicio Sesión">
-                </a></li>
+                        <img src="./media/AreaPersonal.png" alt="Inicio Sesión">
+                    </a></li>
                 <li><a href="./inicio.html" target="_self">Inicio</a></li>
                 <li><a href="./colecciones.html" target="_self">Colecciones</a></li>
                 <li><a id="activo" href="./foro.html" target="_self">Foro</a></li>
@@ -32,7 +32,9 @@
         <!-- Título centrado con cintas -->
         <div class="titulogeneral">
             <img src="./media/Cinta.png" alt="Cinta" class="cinta">
-            <a href="https://github.com/MssMunroe/FrameAMovie"><h1>Frame a Movie</h1></a>
+            <a href="https://github.com/MssMunroe/FrameAMovie">
+                <h1>Frame a Movie</h1>
+            </a>
             <img src="./media/Cinta.png" alt="Cinta" class="cinta">
         </div>
 
@@ -44,7 +46,7 @@
             </form>
         </div>
     </header>
-    
+
     <main>
         <!-- footer mas grande -->
         <article class="foro">
@@ -122,7 +124,7 @@
                     <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
                 </div>
             </section>
-                        <section class="chat">
+            <section class="chat">
                 <button class="accordion">Opiniones sobre Dune 2</button>
                 <div class="panel">
                     <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
@@ -137,7 +139,7 @@
                     <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
                 </div>
             </section>
-                        <section class="chat">
+            <section class="chat">
                 <button class="accordion">Opiniones sobre Dune 2</button>
                 <div class="panel">
                     <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
@@ -156,19 +158,52 @@
 
     </main>
     <footer>
-        <!-- Enlaces de interes -->
 
-        <div class="enlace">
-            <a href="https://www.netflix.com/es/"><img src="./media/netflix.png" alt="LogoNetflix"></a>
-            <a href="https://www.primevideo.com/"><img src="./media/amazon.png" alt="LogoAmazon"></a>
-            <a href="https://www.disneyplus.com/"><img src="./media/disney.png" alt="LogoDisneyPlus"></a>
+        <!-- Menú del inicio -->
+        <div class="menupie">
+            <ul>
+                <li><a href="./inicio.html" target="_self">Inicio</a></li>
+                <li><a href="./colecciones.html" target="_self">Colecciones</a></li>
+                <li><a href="./foro.html" target="_self">Foro</a></li>
+                <li><a href="./peliculas.html" target="_self">Películas</a></li>
+                <li><a href="./series.html" target="_self">Series</a></li>
+                <li><a href="./estrenos.html" target="_self">Estrenos</a></li>
+            </ul>
         </div>
 
-        <!-- Quienes somos -->
+        <!-- Enlaces a páginas de multimedia -->
+        <div class="enlace">
+            <span class="titulitos">¿No sabes que ver?</span>
+            <div class="logos">
+                <a href="https://www.netflix.com/es/"><img src="./media/netflix.png" alt="LogoNetflix"></a>
+                <a href="https://www.disneyplus.com/"><img src="./media/disney.png" alt="LogoDisneyPlus"></a>
+                <a href="https://www.primevideo.com/"><img src="./media/amazon.png" alt="LogoAmazon"></a>
+            </div>
+            <div class="logos">
+                <a href="https://www.apple.com/es/apple-tv-plus/"><img src="./media/apple.jpg" alt="LogoApple"></a>
+                <a href="https://www.max.com/es/es"><img src="./media/hbo.jpg" alt="LogoHBO"></a>
+                <a href="https://www.crunchyroll.com/es-es/"><img src="./media/crunchyroll.png"
+                        alt="LogoCrunchyroll"></a>
+            </div>
+        </div>
+
+        <!-- Quienes somos y enlace a formulario para registrarse-->
 
         <div class="somos">
-            <span>Siempre las últimas novedades en cine</span>
-            <span>Frame a Movie</span>
+            <span class="titulitos">¿Quieres estar al día del mundo del cine?</span>
+            <span>Frame a Movie es tu página</span>
+            <!-- Este boton en un futuro te llevará a la página donde harías el formulario para registrarte en la web  -->
+            <form action="./areapersonal.html">
+                <input type="submit" value="¡Suscribete!" />
+            </form>
+            <span>Y si quieres ver más cosas chulas, entra en mi Git </span>
+            <span class="git">
+                <img src="./media/arrowder.gif" alt="Flecha apuntando">
+                <a href="https://github.com/MssMunroe?tab=repositories">
+                    <img src="./media/github.png" alt="LogoGitHub">
+                </a>
+                <img src="./media/arrowizq.gif" alt="Flecha apuntando">
+            </span>
         </div>
 
         <!-- Volver al inicio -->
