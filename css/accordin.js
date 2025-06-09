@@ -1,23 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
+// esto para que lo ultimo que cargue sea el js para evitar errores
+document.addEventListener("DOMContentLoaded", function () { 
+  // esto busca todos los botones que se llamen 'accordion'
   const accordions = document.querySelectorAll(".accordion");
 
-  accordions.forEach((accordion) => {
-    accordion.addEventListener("click", function () {
-      const panel = this.nextElementSibling;
+  // cada boton cuando es clicado
+  accordions.forEach(button => {
+    button.addEventListener("click", function () {
+      // buscará la clase 'foro' y será donde se esconderá todo lo que sea 'comentario'
+      const foro = this.closest(".foro");
+      const comentarios = foro.querySelectorAll(".comentario");
 
-      // Cierra otros paneles si deseas un solo abierto a la vez
-      accordions.forEach((acc) => {
-        if (acc !== this) {
-          acc.nextElementSibling.style.maxHeight = null;
-        }
+      // y añade o quita visible para que se vea diferente según si esta visible o no
+      comentarios.forEach(comentario => {
+        comentario.classList.toggle("visible");
       });
 
-      // Toggle actual
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+      // y lo mismo pasa con open
+      this.classList.toggle("open");
     });
   });
 });

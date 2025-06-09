@@ -48,112 +48,143 @@
     </header>
 
     <main>
-        <!-- footer mas grande -->
+        <img src="./media/background.png" alt="Banner con películas">
         <article class="foro">
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
+            <button class="accordion">Opiniones sobre *Dune: Parte 2*</button>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">Álvaro</span> el 1 jun 2025</span>
+                <span class="texto">
+                    Visualmente impresionante. Villeneuve se supera. Aunque sigo pensando que hay demasiada pausa entre
+                    escenas clave.
+                </span>
             </section>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">Laura88</span> el 2 jun 2025</span>
+                <span class="texto">
+                    Me encantó, pero me perdí un poco si no has leído los libros. Aun así, Hans Zimmer lo vuelve a
+                    petar.
+                </span>
+            </section>
+            <!-- El último comentario sería para que el usuario, si esta registrado deje su opinión, si no lo esta, le llevaría a un formulario para registrarse -->
+            <form class="comentario respuesta" action="./foro.html">
+                <label for="nuevoComentario" class="autor">¿Qué opinas tú?</label>
+                <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                    required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
         </article>
         <article class="foro">
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
+            <button class="accordion">Opiniones sobre *Viuda Negra*</button>
+
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">SofiMarvel</span> el 1 jun 2025</span>
+                <span class="texto">
+                    ¡Por fin Natasha tuvo su película! Me gustó mucho la relación con su "familia", sobre todo Yelena,
+                    que se roba cada escena.
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">¿Qué opinan de Joker 2?</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">JaviR</span> el 1 jun 2025</p>
-                    <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
-                </div>
+
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">RafaCine</span> el 2 jun 2025</span>
+                <span class="texto">
+                    Creo que llegó demasiado tarde. La historia es buena, pero ya sabíamos su destino, así que el
+                    impacto fue menor.
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
+
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">YelenaFan</span> el 2 jun 2025</span>
+                <span class="texto">
+                    Florence Pugh lo hace brutal. Me encantó el humor y la dinámica entre hermanas. ¡Quiero ver más de
+                    ella en el UCM!
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">¿Qué opinan de Joker 2?</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">JaviR</span> el 1 jun 2025</p>
-                    <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
-                </div>
+
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">CineCrítico87</span> el 3 jun 2025</span>
+                <span class="texto">
+                    La acción está bien coreografiada, pero el villano es muy flojo. Taskmaster merecía mucho más
+                    desarrollo.
+                </span>
             </section>
+
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">MartaG</span> el 3 jun 2025</span>
+                <span class="texto">
+                    Me emocionó más de lo que esperaba. Aunque no es perfecta, tiene corazón y cierra bien el arco de
+                    Natasha.
+                </span>
+            </section>
+            <form class="comentario respuesta" action="./foro.html">
+                <label for="nuevoComentario" class="autor">¿Qué opinas tú?</label>
+                <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                    required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
         </article>
         <article class="foro">
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
+            <button class="accordion">¿Qué opinan de *The Batman*?</button>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">DarkNite</span> el 30 may 2025</span>
+                <span class="texto">
+                    La atmósfera oscura es brutal, por fin una Gotham sucia y realista. Pattinson me sorprendió.
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">¿Qué opinan de Joker 2?</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">JaviR</span> el 1 jun 2025</p>
-                    <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
-                </div>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">Cinefilo_99</span> el 31 may 2025</span>
+                <span class="texto">
+                    Me gustó, pero creo que le sobran como 20 minutos. La persecución con el Pingüino fue lo mejor.
+                </span>
             </section>
+            <form class="comentario respuesta" action="./foro.html">
+                <label for="nuevoComentario" class="autor">¿Qué opinas tú?</label>
+                <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                    required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
         </article>
         <article class="foro">
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
+            <button class="accordion">¿Vale la pena ver *Everything Everywhere All at Once*?</button>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">TaniaF</span> el 29 may 2025</span>
+                <span class="texto">
+                    Es un viaje rarísimo pero al final lloré. Michelle Yeoh se merece todo. Confusa pero maravillosa.
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">¿Qué opinan de Joker 2?</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">JaviR</span> el 1 jun 2025</p>
-                    <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
-                </div>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">LuisGM</span> el 29 may 2025</span>
+                <span class="texto">
+                    No es para todos. Si buscas algo tradicional, quizá no te guste. Pero si entras en su juego... ¡es
+                    una joya!
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
+            <form class="comentario respuesta" action="./foro.html">
+                <label for="nuevoComentario" class="autor">¿Qué opinas tú?</label>
+                <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                    required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </article>
+        <article class="foro">
+            <button class="accordion">Críticas a *Avatar: El sentido del agua*</button>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">IreneCine</span> el 28 may 2025</span>
+                <span class="texto">
+                    Técnicamente impecable, pero el guion sigue flojo. Cameron se centra demasiado en lo visual.
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">¿Qué opinan de Joker 2?</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">JaviR</span> el 1 jun 2025</p>
-                    <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
-                </div>
+            <section class="comentario">
+                <span class="autor">Publicado por <span class="nombre">PedroFan</span> el 28 may 2025</span>
+                <span class="texto">
+                    A mí me emocionó. El mundo acuático es increíble. No todo tiene que ser solo historia.
+                </span>
             </section>
-            <section class="chat">
-                <button class="accordion">Opiniones sobre Dune 2</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">Lucía</span> el 3 jun 2025</p>
-                    <p class="chat-preview">Increíble la cinematografía, pero creo que el ritmo fue más lento que en la
-                        primera parte...</p>
-                </div>
-            </section>
-            <section class="chat">
-                <button class="accordion">¿Qué opinan de Joker 2?</button>
-                <div class="panel">
-                    <p class="chat-detalles">Publicado por <span class="autor">JaviR</span> el 1 jun 2025</p>
-                    <p class="chat-preview">No esperaba que cantara tanto... Aunque visualmente me pareció brutal.</p>
-                </div>
-            </section>
+            <form class="comentario respuesta" action="./foro.html">
+                <label for="nuevoComentario" class="autor">¿Qué opinas tú?</label>
+                <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                    required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
         </article>
 
     </main>
