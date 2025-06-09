@@ -77,7 +77,7 @@
             <button class="accordion">Opiniones sobre *Viuda Negra*</button>
 
             <section class="comentario">
-                <span class="autor">Publicado por <span class="nombre">SofiMarvel</span> el 1 jun 2025</span>
+                <span id="comentariopersonal" class="autor">Publicado por <span class="nombre">MssMunroe</span> el 1 jun 2025</span>
                 <span class="texto">
                     ¡Por fin Natasha tuvo su película! Me gustó mucho la relación con su "familia", sobre todo Yelena,
                     que se roba cada escena.
@@ -181,6 +181,16 @@
             </section>
             <form class="comentario respuesta" action="./foro.html">
                 <label for="nuevoComentario" class="autor">¿Qué opinas tú?</label>
+                <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
+                    required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+        </article>
+        <!-- Este es para iniciar una nueva conversación -->
+        <article class="foro">
+            <button class="accordion">Iniciar Nuevo Chat</button>
+            <form class="comentario respuesta" action="./foro.html">
+                <label for="nuevoComentario" class="autor">¿Sobre que deseas hablar?</label>
                 <textarea id="nuevoComentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..."
                     required></textarea>
                 <button type="submit">Publicar</button>

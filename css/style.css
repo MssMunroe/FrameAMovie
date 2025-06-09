@@ -24,6 +24,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 /* Si no pongo un margen del tamaño de la cabecera, se me come el main */
@@ -252,32 +253,138 @@ main>img {
 }
 
 /* ÁREA PERSONAL */
-.area-personal {
-  padding: 40px 20px;
-  text-align: center;
-}
 
-.area-personal h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.areapersonal {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b0736;
 }
 
 .perfil {
+  background-image: url(../media/bgperfil.jpg);
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  border-radius: 8px;
+}
+
+.perfil .iconousuario img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #a58b03;
+}
+
+/* esto para que cada uno sea una linea */
+.perfil .nombre,
+.perfil .nickname,
+.perfil button {
+  display: block;
+  margin: 8px auto;
+}
+
+.perfil .nombre {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.perfil .nickname {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.perfil button {
+  padding: 8px 16px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.perfil button:hover {
+  background-color: #c2a800;
+  transform: scale(1.2);
+}
+
+.extrass {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.extrapersona {
+  flex: 0 20%;
+  /*Le ponngo el 0 para que no crezca, así ocupa siempre el 20%  */
+  background-color: #02001e;
+  box-shadow: 5px 6px 4px 2px #000000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.extrapersona .seguidores img {
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+}
+
+.extrapersona span {
+  display: block;
+  padding: 10px;
+}
+
+.extrapersona span.descripcion {
+  font-size: 18px;
+  padding: 10px 0 2px 0;
+}
+
+.extrapersona span.union {
+  font-size: 14px;
+  padding: 40px 0 20px 0;
+}
+
+.extrapersona .seguidores span {
+  text-transform: uppercase;
+  font-size: 12px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+
+.extraacciones {
+  flex: 1;
+  background-color: #02001e;
+  box-shadow: 5px 6px 4px 2px #000000;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
 }
 
-.icono-usuario {
-  font-size: 50px;
-  color: #FFD700;
+.extraacciones span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 15px;
+  font-weight: bold;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  margin: 15px;
 }
 
-.nombre {
-  font-size: 20px;
-  margin-top: 10px;
+.extraacciones div {
+  width: 90%;
+  text-align: center;
+  margin: 15px 0;
 }
+
+.extraacciones iframe {
+  width: 90%;
+  border-radius: 8px;
+  border: none;
+}
+
 
 /* COLECCIONES */
 
@@ -383,6 +490,7 @@ main>img {
 
 /* FORO */
 
+/* No es el foro más bonito de ver, pero era el desiño que me gustaba con los colores que uso durante toda mis páginas */
 .foro {
   padding: 5px;
   width: 85%;
@@ -453,7 +561,7 @@ main>img {
 }
 
 .foro form.comentario.visible textarea {
-  background-color: #040268;
+  background-color: #18173d;
   border: none;
   border-radius: 5px;
   width: 80%;
